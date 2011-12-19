@@ -3,7 +3,7 @@ ENV["RUBYLIB"] = "#{File.dirname(__FILE__)}/lib"
 ENV["RUBYOPT"] = "-rubygems"
 #:
 
-require "git/webby"
+#require "git/webby"
 
 def spec
   @spec ||= Gem::Specification.load("git-webby.gemspec")
