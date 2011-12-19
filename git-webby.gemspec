@@ -1,5 +1,5 @@
 $:.unshift(File.dirname(__FILE__) + '/lib')
-require "git/webby"
+require "git/webby/version"
 
 Gem::Specification.new do |spec|
   spec.platform          = Gem::Platform::RUBY
