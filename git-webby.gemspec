@@ -30,5 +30,6 @@ Gem::Specification.new do |spec|
   end
   spec.add_dependency "sinatra", ">= 1.0"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rack-test"
 end
 
