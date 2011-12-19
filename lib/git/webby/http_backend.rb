@@ -84,9 +84,9 @@ module Git::Webby
       header_nocache
       content_type_for_git service, :advertisement
       response.body  = ""
-      response.body += packet_write("# service=git-#{service}\n")
-      response.body += packet_flush
-      response.body += repository.run(service, "--stateless-rpc --advertise-refs .")
+      response.body << packet_write("# service=git-#{service}\n")
+      response.body << packet_flush
+      response.body << repository.run(service, "--stateless-rpc --advertise-refs .")
       response.finish
     end
 

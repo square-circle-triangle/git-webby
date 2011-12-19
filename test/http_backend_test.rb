@@ -1,5 +1,5 @@
 require "test/unit"
-require "test/helpers"
+require File.expand_path(File.dirname(__FILE__)) + "/helpers"
 require "rack"
 require "rack/test"
 require "git/webby"

@@ -1,3 +1,4 @@
+$:.unshift(File.dirname(__FILE__) + '/lib')
 require "git/webby"
 
 Gem::Specification.new do |spec|
@@ -28,5 +29,6 @@ Gem::Specification.new do |spec|
     #{'-'*78}
   end
   spec.add_dependency "sinatra", ">= 1.0"
+  spec.add_development_dependency "rake"
 end
 
